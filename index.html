@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Week 2 Assignment</title>
+</head>
+<body>
+    <!-- Ordered List with Roman Numerals -->
+        <h2>Ordered List with Roman Numerals</h2>
+        <ol type="I">
+            <li>Web Development</li>
+            <li>Python</li>
+            <li>Database Management</li>
+            <li>Startup Management</li>
+        </ol>
+  
+
+    <!-- External Image from Pexels -->
+        <h2>Image from Pexels</h2>
+        <img src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg" 
+             alt="Beautiful landscape with trees and river" 
+             width="500">
+        <p>Source: <a href="https://www.pexels.com/" target="_blank">Pexels.com</a></p>
+
+    <!-- Contacts Table -->
+        <h2>Contacts Table</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Kinuthia John</td>
+                    <td>Syokimau Road, Nairobi</td>
+                    <td>+254718765345</td>
+                    <td>john@plpacademy.com</td>
+                </tr>
+                <tr>
+                    <td>Jane Wairimu</td>
+                    <td>43 Utawala Rd, Nairobi</td>
+                    <td>+254712678345</td>
+                    <td>jane@plpacademy.com</td>
+                </tr>
+                <tr>
+                    <td>Mercy Cherono</td>
+                    <td>82 Roselyn Drive, Runda</td>
+                    <td>+254765345688</td>
+                    <td>m.cherono@plpacademy.com</td>
+                </tr>
+                <tr>
+                    <td>Alice Wangui</td>
+                    <td>Kilgoris Road</td>
+                    <td>+254723987645</td>
+                    <td>alice@plpacademy.com</td>
+                </tr>
+                <tr>
+                    <td>Charlene Kasongo</td>
+                    <td>House on the Hill, Nairobi</td>
+                    <td>+254711222333</td>
+                    <td>charlie@plpacademy.com</td>
+                </tr>
+            </tbody>
+        </table>
+
+    <!-- Registration Form -->
+        <h2>Registration Form</h2>
+        <form action="#" method="post">
+            <!-- Name Field -->
+            <div>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" 
+                       placeholder="Enter your full name" 
+                       required 
+                       minlength="3">
+            </div>
+
+            <!-- Email Field -->
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" 
+                       placeholder="Enter your email" 
+                       required>
+            </div>
+
+            <!-- Password Field -->
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" 
+                       placeholder="Create a password" 
+                       required 
+                       minlength="8"
+                       pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
+                       title="Minimum 8 characters, at least one letter and one number">
+            </div>
+
+            <!-- Date Field -->
+            <div>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+
+            <!-- Dropdown Menu -->
+            <div>
+                <label for="country">Country:</label>
+                <select id="country" name="country" required>
+                    <option value="">Select a country</option>
+                    <option value="ug">Uganda</option>
+                    <option value="ke">Kenya</option>
+                    <option value="tz">Tanzania</option>
+                    <option value="rw">Rwanda</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <!-- Radio Buttons -->
+            <div>
+                <fieldset>
+                    <legend>Gender:</legend>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+                    
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                </fieldset>
+            </div>
+
+            <!-- Checkboxes -->
+            <div>
+                <fieldset>
+                    <legend>Interests (select all that apply):</legend>
+                    <input type="checkbox" id="sports" name="interests" value="sports">
+                    <label for="sports">Sports</label>
+                    
+                    <input type="checkbox" id="music" name="interests" value="music">
+                    <label for="music">Music</label>
+                    
+                    <input type="checkbox" id="reading" name="interests" value="reading">
+                    <label for="reading">Reading</label>
+                    
+                    <input type="checkbox" id="travel" name="interests" value="travel">
+                    <label for="travel">Travel</label>
+                </fieldset>
+            </div>
+
+            <!-- Terms and Conditions -->
+            <div>
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I agree to the terms and conditions</label>
+            </div>
+
+            <!-- Submit Button -->
+            <div>
+                <button type="submit">Register</button>
+            </div>
+        </form>
+</body>
+</html>
